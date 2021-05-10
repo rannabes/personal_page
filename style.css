@@ -1,0 +1,342 @@
+
+ /* Font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
+
+ /* Set margins */
+*{
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration:none;
+}
+*:focus {
+    outline: 0;
+}
+.max-width{
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+/* Set default backgrounds */
+html {
+    background-color: #black;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    /* scrollbar-width: none; */
+    height: 100%;
+}
+header {
+height: 180px;
+width: 797px;
+border: thin solid #06F;
+margin-bottom: 0px;
+}
+/* body style */
+body {
+    background-color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: gray;
+    overflow-x: hidden;
+    font-feature-settings: "ss01", "ss04";
+    -webkit-font-feature-settings: "ss01", "ss04";
+    -moz-font-feature-settings: "ss01", "ss04";
+    -ms-font-feature-settings: "ss01", "ss04";
+    font-feature-settings: "ss01", "ss04";
+}
+
+
+/* navbar stylying */
+.navbar{
+  position:absolute;
+  height: 15vh;
+  width: auto;
+  background: transparent;
+  font-family: 'Ubuntu', sans-serif;
+  float: left;
+  display: block;
+  text-align: left;
+  padding: 15px 0;
+  text-decoration: none;
+  transition: top 0.3s;
+
+}
+.navbar .max-width{
+  /* display:flex-left; */
+  align-items: center;
+  justify-content: space-between;
+}
+/* logo style */
+.navbar .logo a{
+  color: #ffffff;
+  float:inherit;
+  font-family:'Ballet', cursive;
+  font-size: 35px;
+  font-weight: 600;
+  display :block;
+}
+ /* content style */
+ .navbar li {
+   list-style: decimal;
+   display: inline-block;
+   font-size: 18px;
+   margin-right: 20px;
+   transition-duration: 0.3s;
+ }
+ .navbar li a{
+   color : #ffffff;
+   transition: color 0.3s ease;
+   float: left;
+   display: block;
+   text-align: left;
+   padding: 15px 0;
+   text-decoration: none;
+   font-size: 18px;
+ }
+ .navbar li:hover{
+   cursor: pointer;
+   color : gray;
+ }
+ .navbar li a:hover{
+   cursor: pointer;
+   color : gray;
+   background-color: transparent;
+ }
+ /* submenu content style */
+ .navbar ul li ul{
+   visibility: hidden;
+   opacity: 0;
+   position: fixed;
+   transition : all 0.3s ease;
+   margin-top: 1rem;
+   left:auto;
+   display : none;
+   font-size: 18px;
+   margin-right: 20px;
+   padding-top : 15px;
+ }
+ .navbar ul li ul a{
+   color : #ffffff;
+ }
+ .navbar ul li:hover > ul,
+ .navbar ul li:focus-within > ul,
+ .navbar ul li ul:hover{
+   visibility : visible;
+   opacity: 1;
+   display: block;
+ }
+ .navbar ul li ul a:hover{
+   color: blue;
+ }
+ .navbar ul li ul li{
+   clear : both;
+   width: 100%;
+ }
+
+ /* menu button styling */
+ .menu-button{
+   color : #fff;
+   font-size: 23px;
+   cursor: pointer;
+   display: none;
+ }
+
+ /* footnote */
+ .footer{
+   color: #fff;
+   font-size: 20px;
+   position: fixed;
+   text-align: right;
+   bottom: 0px;
+   padding-right: 30px;
+   padding-top: 3px;
+   width: 100%;
+   height: 5vh;
+   background-color:black ;
+ }
+/*home section style */
+.home{
+  display: flex;
+  background: url('images/bg.jpeg') no-repeat center;
+  background-color: black;
+  height: 100vh;
+  color: black;
+  min-height: 500px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+  margin: auto 0 auto 0px;
+}
+.home .content .text-1{
+  font-size:27px;
+}
+.home .content .text-2{
+  font-size:27px;
+  width: 400px;
+  margin-left: -3px;
+
+}
+.home .content .text-3{
+  font-size:27px;
+  width: 400px;
+  margin: 5px 0;
+}
+.home .content .text-3 span{
+  color: #fff;
+  width: 400px;
+  font-weight: 500;
+}
+.home .content .text-4{
+  font-size:18px;
+  width: 400px;
+  margin-left:5px
+
+}
+
+/*About me style */
+.About_me{
+  height: 20vh;
+  min-height: 1000px;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: black;
+  background-size:contain;
+}
+.About_me .max-width{
+  display:flex;
+  text-align: justify; /* For Edge */
+  display: flex;
+  margin-left: 20px;
+  margin-top: auto;
+}
+.About_me .content.p{
+  color: #fff;
+  font-size:27px;
+  display:flex;
+  text-align: justify;
+  position:relative;
+  padding-right: 50px;
+}
+.About_me .content img{
+  float:right;
+  width : 50%;
+  margin-left: 20px;
+  width: 50%;
+  height: auto;
+}
+
+/* Resume style */
+.Resume{
+  display:flex;
+  height: 20vh;
+  min-height: 1000px;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  background: url('PI_v2.png') no-repeat right;
+  background-color: black;
+  background-size:contain;
+}
+.Resume .max-width{
+  text-align: justify; /* For Edge */
+  width: 55%;
+  margin-left: 5px;
+  margin-top: 150px;
+  margin-right: 100px;
+}
+.Resume .content.p{
+  color: #fff;
+  font-size:27px;
+  text-align: left; /* For Edge */
+  position: absolute;
+}
+
+/* Tutorial */
+.Tutorial{
+  display:flex;
+  height: 20vh;
+  min-height: 1000px;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: black;
+  background-size:contain;
+}
+.Tutorial .max-width{
+  text-align: justify; /* For Edge */
+  width: 90%;
+  margin-left: 5px;
+  margin-top: 150px ;
+  margin-right: 100px;
+}
+.Tutorial .content.p{
+  color: #fff;
+  font-size:27px;
+  text-align: left; /* For Edge */
+  position: absolute;
+}
+
+
+
+/* Contact style */
+.contact{
+  display:flex;
+  height: 20vh;
+  min-height: 1000px;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: black;
+  background-size:contain;
+}
+.contact .max-width{
+  text-align: left;
+  margin-left: 5px;
+  margin-top: 100px;
+  margin-right: 600px;
+}
+.contact .content.p{
+  color: #fff;
+  font-size:20px;
+  display:contents;
+  text-align: justify;
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-right: 1000px;
+}
+
+/* responsive media query start */
+@media(max-width:947px){
+  .max-width{
+    padding: 0 50px;
+  }
+  .menu-button{
+    display: block;
+    /* z-index:999; */
+  }
+  .menu-button i.active:before{
+    content:'\f00d';
+
+  }
+   .navbar .menu{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left:-100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition:all 0.3s ease;
+  }
+  .navbar .menu.active{
+    left:0;
+  }
+ .navbar .menu li{
+    display: block;
+  }
+  .navbar .menu li a{
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+
+}

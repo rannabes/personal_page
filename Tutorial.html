@@ -1,0 +1,98 @@
+<!-- Personal website, main page -->
+<!DOCTYPE html>
+<html lan="en">
+<head>
+  <!-- Enable responsiveness on mobile devices-->
+  <meta charset="UFT-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    Razieh's portfolio
+  </title>
+  <!-- Style css files -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- add script for math equations -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="max-width">
+      <!-- logo -->
+      <div class="logo"><a href="#">Razieh</a></div>
+      <!-- navigatin bar items -->
+      <ul class="menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./About_me.html">About me</a></li>
+        <li><a href="./Resume.html">Resume</a></li>
+        <li><a href="./Tutorial.html">Tutorial</a>
+          <!-- <ul class="dropdown">
+            <li><a href="./Tutorial.html">Link1</a></li>
+            <li><a href="./Resume.html">Link2</a></li>
+          </ul> -->
+        </li>
+      </ul>
+      <!-- sidebar -->
+      <div class="menu-button">
+        <i class='fas fa-bars'></i>
+      </div>
+    </div>
+  </nav>
+  <div class="footer">contact@razieh.ca</div>
+<!-- content -->
+
+<section class="Tutorial" id="Tutorial">
+  <div class="max-width">
+    <div class="content">
+      <h1>Introduction</h1>
+      <p>
+        The following mini-tutorials provides a simple and yet good-enough
+        definitione of the most commonly used concepts in quantum algorithms.
+        I am preparing these tutorials for audience with zero or little in physics.
+        Therefore, the definitions may not be
+        as comprehensive or presice as the standard textbooks but they provide
+        basic understanding for the reader to understand these concepts while they
+        read an article on quantum computing or they would like to play with one
+        of the commonly sued quantum softwares.
+      </p>
+      <p>
+        I hope this page be used as a "mini-wikipedia" for people
+        with limited time. I provide two version, mathematical definition and
+       and physical interpretation, depending on which way is easier for the reader
+       to understand.
+     </p>
+
+      <h1>Quantum State</h1>
+      <h4>-Mathematical Description</h4>
+      An ideal qubit is a two level system whose state is zero or one or any arbitrary
+      superposition of both. An ideal qubit is described by a "pure state" which mathematically
+      is represented by a vector:
+      $$\vert \psi \rangle = \alpha \vert 0 \rangle + \beta \vert 1 \rangle \hskip 1cm
+      where \hskip 1cm \vert 0 \rangle = \begin{pmatrix} 1\\ 0 \end{pmatrix}
+      \hskip 0.5 cm,  \vert 1 \rangle = \begin{pmatrix} 0\\ 1 \end{pmatrix}$$
+      In practice, no qubit is ideal. It can be noisy or it can be part of a larger system.
+      So, their state is not "pure". The mathematical description of qubits with
+      mixed states is:
+      $$ \rho = \frac{1}{2}
+      \begin{pmatrix}
+       1 + a_z & a_x + i a_y \\
+       a_x - i a_y & 1 - a_z
+       \end{pmatrix} \hskip 1.5cm or
+      \hskip 1.5cm \rho = \frac{1}{2}
+      (\mathbb{1} + a_x \ \sigma_x +a_y \ \sigma_y+a_z\ \sigma_z)
+       $$
+       Here, \( (\alpha\ ,\ \beta) \) are complex numebrs, \( \{ a_{j}\} \) are real numbers
+       and \( \{ \sigma_{j}\} \) are Pauli operators.
+
+
+      <p></p>
+    </div>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
