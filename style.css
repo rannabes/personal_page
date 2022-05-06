@@ -248,7 +248,7 @@ body {
   color: #fff;
   font-size:27px;
   text-align: left; /* For Edge */
-  position: absolute;
+  position: relative;
 }
 
 /* Tutorial */
@@ -272,7 +272,7 @@ body {
   color: #fff;
   font-size:27px;
   text-align: left; /* For Edge */
-  position: absolute;
+  position: relative;
 }
 
 
