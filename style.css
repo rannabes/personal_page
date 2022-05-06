@@ -196,27 +196,27 @@ body {
 
 /*About me style */
 .About_me{
+  display:flex;
   height: 20vh;
   min-height: 1000px;
   color: #fff;
   font-family: 'Ubuntu', sans-serif;
+  background: url('Cory.jpg') no-repeat right;
   background-color: black;
   background-size:contain;
 }
 .About_me .max-width{
-  display:flex;
   text-align: justify; /* For Edge */
-  display: flex;
-  margin-left: 20px;
-  margin-top: auto;
+  width: 55%;
+  margin-left: 5px;
+  margin-top: 150px;
+  margin-right: 100px;
 }
 .About_me .content.p{
   color: #fff;
   font-size:27px;
-  display:flex;
-  text-align: justify;
-  position:relative;
-  padding-right: 50px;
+  text-align: left; /* For Edge */
+  position: relative;
 }
 .About_me .content img{
   float:right;
